@@ -9,8 +9,8 @@ const nflTeams = new set:([
     Hometeam: "Cardinals",
     Homepoint: "78",
     AwayPoint: "45",
-  },
-  { 
+    { 
+},
     City: "Atlanta",
     Name: "Falcons",
     Date: "March 7", 
@@ -18,8 +18,9 @@ const nflTeams = new set:([
     Hometeam: "Falcons",
     Homepoint: "23",
     AwayPoint: "8",
-  },
-  {
+ 
+  { 
+    },
     City: "N/S Carolinas",
     Name: "Carolina Panther",
     Date: "March 7", 
@@ -27,17 +28,18 @@ const nflTeams = new set:([
     Hometeam: "Panther",
     Homepoint: "45",
     AwayPoint: "8",
-  }
+  
 {
-      City: "Chicago",
+     }, 
+    City: "Chicago",
     Name: "Chicago Bears",
     Date: "March 7", 
     AwayTeam: "Dallas Cowboys",
     Hometeam: "Chicago Bears",
     Homepoint:"78",
     AwayPoint: "8",
-}
-{
+ { 
+    },
       City: "Dallas",
     Name: "Dallas Cowboys",
     Date: "March 7", 
@@ -45,8 +47,8 @@ const nflTeams = new set:([
     Hometeam: "Dallas Cowboys",
     Homepoint:"90",
     AwayPoint: "87",
-}
-{
+ { 
+    },
         City: "Detroits",
     Name: "Detroit Lions",
     Date: "March 7", 
@@ -54,8 +56,8 @@ const nflTeams = new set:([
     Hometeam: "Detroit Lions",
     Homepoint:"90",
     AwayPoint: "87",
-}
-{
+ { 
+    },
   City: "Jacksonville",
     Name: "Jacksonville Jaguars",
     Date: "March 7", 
@@ -63,8 +65,8 @@ const nflTeams = new set:([
     Hometeam: "Jacksonville Jaguars",
     Homepoint:"90",
     AwayPoint: "87",
-}
-{
+ { 
+    },
     City: "GreenBay",
     Name: "Green Bay Packers",
     Date: "March 7", 
@@ -72,8 +74,8 @@ const nflTeams = new set:([
     Hometeam: "Green Bay Packers",
     Homepoint:"90",
     AwayPoint: "87",
-}
-{
+ { 
+    },
      City: " Los Angeles",
     Name: " Los Angeles Rams",
     Date: "March 7", 
@@ -81,8 +83,8 @@ const nflTeams = new set:([
     Hometeam: " Los Angeles Rams",
     Homepoint:"90",
     AwayPoint: "87",
-}
-{
+ { 
+    },
   
      City: " Los Angeles",
     Name: " Los Angeles Rams",
@@ -91,8 +93,8 @@ const nflTeams = new set:([
     Hometeam: " Los Angeles Rams",
     Homepoint:"90",
     AwayPoint: "87",
-}
-{
+ { 
+    },
   
    City: "Minnesota",
     Name: "Minnesota Vikings",
@@ -101,8 +103,8 @@ const nflTeams = new set:([
     Hometeam: "Minnesota",
     Homepoint:"90",
     AwayPoint: "87",
-}
-{
+ { 
+    },
   City: "New Orleans",
     Name: "New Orleans Saints",
     Date: "March 7", 
@@ -110,8 +112,8 @@ const nflTeams = new set:([
     Hometeam: "New Orleans Saints",
     Homepoint:"90",
     AwayPoint: "87",
-}
-{
+ { 
+    },
    City: "New York",
     Name: "New York Giants",
     Final Date: "March 7", 
@@ -119,8 +121,8 @@ const nflTeams = new set:([
     Hometeam: "New York Giants",
     Homepoint:"90",
     AwayPoint: "87",
-}
-{
+ { 
+    },
  
   City: "Denver",
     Name: "Denver Broncos",
@@ -129,8 +131,8 @@ const nflTeams = new set:([
     Hometeam: "Denver Broncos",
     Homepoint:"90",
     AwayPoint: "87", 
-}
-{
+ { 
+    },
    City: "Houston ",
     Name: "Houston Texan",
     Date: "March 7", 
@@ -138,8 +140,8 @@ const nflTeams = new set:([
     Hometeam: "Houston Texan",
     Homepoint:"90",
     AwayPoint: "87", 
-}
-}
+ { 
+    },
    City: "Miami ",
     Name: " Miami Dolphins ",
     Date: "March 7", 
@@ -147,8 +149,8 @@ const nflTeams = new set:([
     Hometeam: " Miami Dolphins ",
     Homepoint:"90",
     AwayPoint: "87",
-}
-{
+ { 
+    },
   
    City: "Tennessee",
     Name: " Tennessee Titans",
@@ -157,9 +159,8 @@ const nflTeams = new set:([
     Hometeam: " Tennessee Titans",
     Homepoint:"90",
     AwayPoint: "87",
-}
-{
-    
+ { 
+    },
     City: "Buffalo",
     Name: " Buffalo Bills",
     Date: "March 7", 
@@ -167,8 +168,8 @@ const nflTeams = new set:([
     Hometeam: "Buffalo Bills",
     Homepoint:"90",
     AwayPoint: "87",
-}
-{
+ { 
+    },
   ])
     // List all Elements
 let text = "";
@@ -184,5 +185,5 @@ document.getElementById("demo").innerHTML = text;
      }
     }
   }
-}
+  }
 }' 
