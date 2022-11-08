@@ -1,5 +1,5 @@
 
-const nflTeams = new set([
+const nflTeams = ([
      { 
    },  
     City: "Arizona",    
