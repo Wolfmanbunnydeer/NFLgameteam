@@ -1,5 +1,13 @@
+//Following codes are for Games
 
-const nflTeams = ([
+document.getElementById("addGameButton").addEventListener("click", myFunction);
+
+function myFunction() {
+  let myGames = document.getElementById("games").value;
+
+  // create NFL = document.createElement('NFL').innerHTML;
+  var NFL= document.createElement("addGamesButton");
+  NFL.innerHTML =const nflTeams = ([
     },  
      {  
     City: "Arizona",    
