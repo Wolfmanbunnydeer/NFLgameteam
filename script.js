@@ -170,30 +170,27 @@ const nflTeams = new set:([
     AwayPoint: "87",
  { 
     },
-let hello = "";
-
-hello = function() {
-  document.getElementById("demo").innerHTML += this;
-}
-
-//The window object calls the function:
-window.addEventListener("load", hello);
-
-//A button object calls the function:
-document.getElementById("btn").addEventListener("click", hello);
-         
   ])
     // List all Elements
 let text = "";
 letters.forEach (function(value) {
   text += value + "<br>";
 })
-  function getinnerText() {
+
+function getinnerText() {
   let text = document.getElementById("myP").innerText;
   document.getElementById("demo").innerText = text;
-
 }
-document.getElementById("demo").innerHTML = text;   
+
+function getinnerHTML() {
+  let text = document.getElementById("myP").innerHTML;
+  document.getElementById("demo").innerText = text;
+}
+
+function gettextContent() {
+  let text = document.getElementById("myP").textContent;
+  document.getElementById("demo").innerText = text;
+        }
      }
     }
   }
