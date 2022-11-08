@@ -253,7 +253,7 @@ nflTeams.forEach((team) => {
   //Insert data for create Element fopr flexbox.
   document.getElementById("gamesOutput").innerHTML =
     "myGames is" +
-    myGames +
+    NFL.myGames +
     "" +
     "<br>Name: " +
     NFL.Name +
