@@ -190,6 +190,84 @@ function getinnerHTML() {
 function gettextContent() {
   let text = document.getElementById("myP").textContent;
   document.getElementById("demo").innerText = text;
+// Populating Team Select Options
+const teamSelectOptions = document.getElementById('Add game');
+nflTeams.forEach((team) => {
+    const teamOption = document.createElement('option');
+    teamOption.textContent = team.name;
+    teamOption.value = team.name;
+    teamSelectOptions.appendChild(teamOption);
+})
+    //Img container
+    const imageContainer = document.createElement('div');
+    imageContainer.classList.add('flex-container');
+    const img = document.createElement('img');
+    img.src = team.imgurl;
+    imageContainer.appendChild(img);
+    
+    // Appending all elements to card element
+    teamCard.append(
+        teamName,
+        teamLocation,
+        flex-container,
+    );
+
+    // Appending team card to container
+    container.appendChild(teamCard);
+});  
+  
+  let txt = "";
+  document.getElementById("demo").innerHTML = txt;
+  let text = "<div>flex container";
+  for (let i = 20; i < NFL.length; i++) {
+    text += NFL[i] + "<br>";
+  }
+  myGames = myGames + "";
+}
+  myGames = myGames + "<br>";
+}
+ NFL.Name = NFL.Name + "";
+  NFL.Date = NFL.Date + "";
+  NFL.City = NFL.City + "";
+ NFL.Hometeam =  NFL.Hometeam+ "";
+ NFL.HomeAway = NFL.HomeAway + "";
+  NFL.Awayteam = NFL.Awayteam + "";
+  NFL.AwayPoint = NFL.AwayPoint + "";
+}
+ NFL.Name = NFL.Name + "<br>";
+  NFL.Date = NFL.Date + "<br>";
+  NFL.City = NFL.City + "<br>";
+ NFL.Hometeam =  NFL.Hometeam+ "<br>";
+ NFL.HomeAway = NFL.HomeAway + "<br>";
+  NFL.Awayteam = NFL.Awayteam + "<br>";
+  NFL.AwayPoint = NFL.AwayPoint + "<br>";
+
+  //Insert data for create Element fopr flexbox.
+  document.getElementById("gamesOutput").innerHTML =
+    "myGames is" +
+    myGames +
+    "" +
+    "<br>Name: " +
+    NFL.Name +
+    " " +
+    "<br>City: " +
+    NFL.City +
+    " " +
+    "<br>Date: " +
+    NFL.Hometeam +
+    " " +
+    "<br>Hometeam:" +
+   NFL.Homepoint +
+    " " +
+    "<br>Homepoint:" +
+    NFL.Awayteam +
+    " " +
+    "<br>Awayteam:" +
+    " " +
+    NFL.AwayPoint +
+    "<br>AwayPoint:" +
+    "  " +
+    "." 
         }
      }
     }
