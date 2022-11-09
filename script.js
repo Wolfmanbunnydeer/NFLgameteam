@@ -234,13 +234,14 @@ function onloadDoc(url){
       var arrAwayTeam = document.getElementById("AwayTeam").innerHTML;
       var arrHomePoint = document.getElementById("HomePoint").innerHTML;
       var arrAwayPoint = document.getElementById("awaypoint").innerHTML;
+    
     }
       function AddGame() {
-        arrDate[arrDate.length] = arrDate;
-        arrHomeTeam[arrHomeTeam.length] = arrHomeTeam;
-        arrAwayTeam[arrAwayTeam.length] = arrAwayTeam;
-        arrHomePoint[arrHomePoint.length] = arrHomePoint;
-        arrAwayPoint[arrAwayPoint.length] = arrAwayPoint;
+       var arrDate[arrDate.length] = arrDate;
+        var arrHomeTeam[arrHomeTeam.length] = arrHomeTeam;
+        var arrAwayTeam[arrAwayTeam.length] = arrAwayTeam;
+        var arrHomePoint[arrHomePoint.length] = arrHomePoint;
+       var  arrAwayPoint[arrAwayPoint.length] = arrAwayPoint;
       }
 
       document.getElementById("date").value = "";
