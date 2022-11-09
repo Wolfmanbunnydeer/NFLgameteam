@@ -3,7 +3,15 @@ function myFunction() {
   document.getElementById("GameButton").addEventListener("click", myFunction);
 }
 // create NFL = document.createElement('result').innerHTML;
-
+function onloadData(){
+}
+var temp = document.querySelector('.date');
+ 	var Hometeambutton = document.querySelector("Hometeam");
+ 	var awayteam = document.querySelector(".awayteam");
+ 	var homepoint = document.querySelector(".homepoint");
+ 	var awaypointDiv = document.querySelector(".awaypoint");
+}
+  var spark = new flex-container
   var NFL = (document.createElement("game").innerHTML = [
     {
       City: "Arizona",
@@ -230,10 +238,10 @@ function myFunction() {
     }
       function AddGame() {
        var arrDate[arrDate.length] = arrDate;
-        var arrHomeTeam[arrHomeTeam.length] = arrHomeTeam;
-        var arrAwayTeam[arrAwayTeam.length] = arrAwayTeam;
-        var arrHomePoint[arrHomePoint.length] = arrHomePoint;
-       var  arrAwayPoint[arrAwayPoint.length] = arrAwayPoint;
+        var arrHomeTeam[arrHomeTeam.length] = HomeTeam;
+        var arrAwayTeam[arrAwayTeam.length] = AwayTeam;
+        var arrHomePoint[arrHomePoint.length] = HomePoint;
+       var  arrAwayPoint[arrAwayPoint.length] = AwayPoint;
       }
 
       document.getElementById("date").value = "";
