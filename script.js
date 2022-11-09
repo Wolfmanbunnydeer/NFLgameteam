@@ -215,11 +215,11 @@ function DisplayData() {
   }
 
   function AddGame() {
-    var arrDate = new Array();
-    var arrHomeTeam = new Array();
-    var arrAwayTeam = new Array();
-    var arrHomePoint = new Array();
-    var arrAwayPoint = new Array();
+    var arrDate = newArray();
+    var arrHomeTeam = newArray();
+    var arrAwayTeam = newArray();
+    var arrHomePoint = newArray();
+    var arrAwayPoint = newArray();
     function AddGame() {
       var Date = document.getElementById("date").innerHTML;
       var HomeTeam = document.getElementById("Hometeam").innerHTML;
