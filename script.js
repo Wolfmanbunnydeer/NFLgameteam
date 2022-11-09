@@ -3,8 +3,15 @@ function myFunction() {
   document.getElementById("GameButton").addEventListener("click", myFunction);
 }
 // create NFL = document.createElement('result').innerHTML;
-
-function DisplayData() {
+function onloadDoc(url){
+  const http = new HTMLHttpRequest();
+  http.onload = function() {
+    document.getElementById('date').innerHTML = this.status;
+    document.getElementById('Hometeam').innerHTML = this.statusText;
+    document.getElementById('awayteam').innerHTML = this.responseText;
+    document.getElementById('homepoint').innerHTML = this.responseText;
+   document.getElementById('awaypoint').innerHTML = this.responseText;
+  }
   var NFL = (document.createElement("game").innerHTML = [
     {
       City: "Arizona",
