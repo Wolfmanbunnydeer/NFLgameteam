@@ -227,11 +227,11 @@ function DisplayData() {
       var HomePoint = document.getElementById("HomePoint").innerHTML;
       var AwayPoint = document.getElementById("awaypoint").innerHTML;
       function AddGame() {
-        arrDate[arrDate.length] = Date;
-        arrHomeTeam[arrHomeTeam.length] = HomeTeam;
-        arrAwayTeam[arrAwayTeam.length] = AwayTeam;
-        arrHomePoint[arrHomePoint.length] = HomePoint;
-        arrAwayPoint[arrAwayPoint.length] = AwayPoint;
+        arrDate[arrDate.length] = arrDate;
+        arrHomeTeam[arrHomeTeam.length] = arrHomeTeam;
+        arrAwayTeam[arrAwayTeam.length] = arrAwayTeam;
+        arrHomePoint[arrHomePoint.length] = arrHomePoint;
+        arrAwayPoint[arrAwayPoint.length] = arrAwayPoint;
       }
 
       document.getElementById("date").value = "";
