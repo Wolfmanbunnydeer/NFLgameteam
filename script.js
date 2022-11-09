@@ -227,12 +227,14 @@ function onloadDoc(url){
     var arrAwayTeam = newArray();
     var arrHomePoint = newArray();
     var arrAwayPoint = newArray();
+  }
     function AddGame() {
       var arrDate = document.getElementById("date").innerHTML;
       var arrHomeTeam = document.getElementById("Hometeam").innerHTML;
       var arrAwayTeam = document.getElementById("AwayTeam").innerHTML;
       var arrHomePoint = document.getElementById("HomePoint").innerHTML;
       var arrAwayPoint = document.getElementById("awaypoint").innerHTML;
+    }
       function AddGame() {
         arrDate[arrDate.length] = arrDate;
         arrHomeTeam[arrHomeTeam.length] = arrHomeTeam;
