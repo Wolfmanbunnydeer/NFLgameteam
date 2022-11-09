@@ -251,11 +251,11 @@ function DisplayData() {
     }
     function AddGame() {
       document.getElementById("gameOutput").innerHTML = content;
-      arrDate = Array();
-      arrHomeTeam = Array();
-      arrHomePoint = Array();
-      arrAwayTeam = Array();
-      arrAwayPoint = Array();
+      arrDate = arrArray();
+      arrHomeTeam = arrArray();
+      arrHomePoint = arrArray();
+      arrAwayTeam = arrArray();
+      arrAwayPoint = arrArray();
     }
     var content = "<b> Games Entered by User</b><br>";
     document.getElementById("gameOutput").innerHTML = content;
