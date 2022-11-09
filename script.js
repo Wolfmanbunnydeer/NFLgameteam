@@ -5,6 +5,7 @@ function GameFunction() {
 // create NFL = document.createElement('result').innerHTML;
 
 function DisplayData(){
+}
 var NFL = (document.createElement("game").innerHTML = [
   {
     City: "Arizona",
