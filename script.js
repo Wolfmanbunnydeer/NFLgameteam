@@ -216,13 +216,7 @@ window.open('https://wolfmanbunnydeer.github.io/NFLgames-team3/'); //This will o
 }
 function newDoc() {
   window.location.assign("https://wolfmanbunnydeer.github.io/NFLgames-team3/")
-}
-function ResetGame() {
-  var x = document.getElementById("gameForm");
-  var text = "";
-  var i;
-  for (i = 0; i < x.length ;i++) {
-    text += x.elements[i].value + "<br>";
+
   }
   document.getElementById("Game").innerHTML = text;
 }
