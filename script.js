@@ -97,10 +97,10 @@ var temp = document.querySelector('.date');
 
 
  
-function resetTable() {
+function loadingdata() {
 
-/* Find a <table> element with id="myTable":*/
-var table = document.getElementById("myTable");
+/* Find a flex container element with class="flex-container":*/
+var data = document.getElementByClassName("flex-container");
 
 /* Add some text to the new cells:*/
  document.getElementById("date").value='';
