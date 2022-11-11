@@ -1,11 +1,4 @@
-//Following codes are for Games
-function myFunction() {
-  document.getElementById("GameButton").addEventListener("click", myFunction);
-}
-// create NFL = document.createElement('result').innerHTML;
-
-function DisplayData() {
-  var NFL = (document.createElement("game").innerHTML = [
+var NFL = (document.createElement("flex-container").innerHTML = [
     {
       City: "Arizona",
       Name: "Arizona Cardinal",
@@ -171,96 +164,44 @@ function DisplayData() {
       AwayPoint: "87"
     }
   ]);
-  function AddGame() {
-    let theDateName = document.getElementById("date").value;
-    let theHomeTeam = document.getElementById("Hometeam").value;
 
-    let theHomePoint;
-    document.getElementById("homepoint").value;
+var tempdate = document.querySelector("date");
+  var hometeam = document.querySelector("Hometeam");
+  var awayteam = document.querySelector("awayteam");
+  var homepoint = document.querySelector("homepoint");
+  var awaypoint = document.querySelector(".awaypoint");
 
-    let theAwayTeam;
-    document.getElementById("awayteam").value;
-    let theAwayPoint;
-    document.getElementById("awaypoint").value;
-    //const result = divValue.textContent.trim(); alert(result)
-    document.getElementById("gameOutput").innerHTML =
-      "The Date Name is " +
-      theDateName +
-      ".<br> HomeTeam " +
-      theHomeTeam +
-      ".<br> Home Point " +
-      theHomePoint +
-      ".<br>Away Team" +
-      theAwayTeam +
-      ".<br> AwayPoint" +
-      theAwayPoint +
-      ".";
-  }
-  //Following codes are for  Movies
-
-  document.getElementById("GameButton").addEventListener("click", DateFunction);
-
-  function DateFunction() {
-    let theDateseason = document.getElementById("games").value;
-
-    let thequarter = "";
-    for (let i = 0; i < theDateseason; i++) {
-      for (let j = 0; j <= i; j++) {
-        thequarter = thequarter + "*";
+  var NFL = document.createElement("game").innerHTML = [
+    {     
+      thisDate: tempdate,
+      AwayTeam: awayteam,
+      Hometeam: hometeam,
+      Homepoint: homepoint,
+      AwayPoint: awaypoint
       }
-      thequarter = thequarter + "<br>";
-      document.getElementById("gameOutput").innerHTML = thequarter;
-    }
-    thequarter = "";
-  }
-
-  function AddGame() {
-    var arrDate = new Array();
-    var arrHomeTeam = new Array();
-    var arrAwayTeam = new Array();
-    var arrHomePoint = new Array();
-    var arrAwayPoint = new Array();
-    function AddGame() {
-      var Date = document.getElementById("date").innerHTML;
-      var HomeTeam = document.getElementById("Hometeam").innerHTML;
-      var AwayTeam = document.getElementById("AwayTeam").innerHTML;
-      var HomePoint = document.getElementById("HomePoint").innerHTML;
-      var AwayPoint = document.getElementById("awaypoint").innerHTML;
-      function AddGame() {
-        arrDate[arrDate.length] = Date;
-        arrHomeTeam[arrHomeTeam.length] = HomeTeam;
-        arrAwayTeam[arrAwayTeam.length] = AwayTeam;
-        arrHomePoint[arrHomePoint.length] = HomePoint;
-        arrAwayPoint[arrAwayPoint.length] = AwayPoint;
-      }
-
-      document.getElementById("date").value = "";
-      document.getElementById("Hometeam").value = "";
-      document.getElementById("awayteam").value = "";
-      document.getElementById("homepoint").value = "";
-      document.getElementById("awaypoint").value = "";
-    }
+    ]
+    
+    
+ let el;
+    let userInput;
+    let input = document.getElementById("date");
+ let list = document.getElementById("list");
+    let id = 0;
+    let nums = [];
 
     function AddGame() {
-      var content = "<b>Data Entered by User :</b><br>";
-      content += [...arrDate] + "</br>";
-      content += [...arrHomeTeam] + "</br>";
-      content += [...arrAwayTeam] + "</br>";
-      content += [...arrHomePoint] + "</br>";
-      content += [...arrAwayPoint] + "</br>";
+      id++;
+      el = document.createElement("li");
+      el.style.listStyle = "none";
+      el.id = id;
+      list.append(el);
+      el.innerHTML = input.value;
+      nums.push(id);
+      console.log(nums);
+      console.log(el);
+      input.value = "";
+      input.focus();
     }
-    function AddGame() {
-      document.getElementById("gameOutput").innerHTML = content;
-      arrDate = Array();
-      arrHomeTeam = Array();
-      arrHomePoint = Array();
-      arrAwayTeam = Array();
-      arrAwayPoint = Array();
-    }
-    var content = "<b> Games Entered by User</b><br>";
-    document.getElementById("gameOutput").innerHTML = content;
-  }
-}
 
 
 
