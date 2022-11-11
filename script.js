@@ -6,7 +6,7 @@ function myFunction() {
 function onloadData(){
 }
 var temp = document.querySelector('.date');
-  var Hometeambutton = document.querySelector("Hometeam");
+  var Hometeambutton = document.querySelector(."Hometeam");
   var awayteam = document.querySelector(".awayteam");
   var homepoint = document.querySelector(".homepoint");
   var awaypointDiv = document.querySelector(".awaypoint");
