@@ -381,6 +381,49 @@ function newElement() {
 
       div.style.display = "none";
 
+$(document).ready(function(){
+  var submitBtn = $('#submit-btn');
+  var inputs = $('.info');
+  var result = $('#result');
+  var dataHolder = {};
+  
+  submitBtn.click(function(e){
+    console.log(e); // Details about the event from clicking the button 
+    e.preventDefault(); // prevent the default behaviour of the button
+    $(inputs).each(function(i) {
+      console.log('All inputs in the form', $(this)); 
+      // $(this) refers to all of the inputs having the info Class.
+      // Knowing that, we could easally get their values or ther
+      // name attributes in order to create a meaningful and descriptive
+      // Object with the data
+      
+      console.log('The number if itterations', i);
+      // Knowing the number of ittereations(the number of inputs)
+      // We could assign i to be equal to the inputs name attribute.
+      // By doing that we can use i to assign the object key names,
+      // otherwise it would be 0: 1: 2: 3:
+      
+      i = $(this).attr('name'); // Assign i to the inputs name attributes
+      console.log('i is now changed to: ', i);
+      
+      // Add the value to the object
+      dataHolder[i] = $(this).val();
+    });
+    
+    // Now we need to output the result into the DOM result container
+    // We can do that by looping trough our dataHolder object
+    
+    for(var k in dataHolder) {
+      if(dataHolder.hasOwnProperty(k)) {
+        console.log('value of k ', k) // k is actually the key in the object
+        result.append('<p>' + k + ' : ' + dataHolder[k] + '</p>'); // Append the data in the result container
+      }
+    }
+  });
+});
+      
+      
+
     }
 
   }
