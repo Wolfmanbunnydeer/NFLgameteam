@@ -6,12 +6,11 @@ function myFunction() {
 function onloadData(){
 }
 var temp = document.querySelector('.date');
- 	var Hometeambutton = document.querySelector("Hometeam");
- 	var awayteam = document.querySelector(".awayteam");
- 	var homepoint = document.querySelector(".homepoint");
- 	var awaypointDiv = document.querySelector(".awaypoint");
-}
-  var spark = new flex-container
+  var Hometeambutton = document.querySelector("Hometeam");
+  var awayteam = document.querySelector(".awayteam");
+  var homepoint = document.querySelector(".homepoint");
+  var awaypointDiv = document.querySelector(".awaypoint");
+
   var NFL = (document.createElement("game").innerHTML = [
     {
       City: "Arizona",
@@ -240,7 +239,7 @@ var temp = document.querySelector('.date');
       document.getElementById("awayteam").value = "";
       document.getElementById("homepoint").value = "";
       document.getElementById("awaypoint").value = "";
-    }
+
 
     function AddGame() {
       var content = "<b>Data Entered by User :</b><br>";
@@ -260,73 +259,132 @@ var temp = document.querySelector('.date');
     }
     var content = "<b> Games Entered by User</b><br>";
     document.getElementById("gameOutput").innerHTML = content;
-  }
-  function sortTable() {
-  var table, rows, switching, i, x, y, shouldSwitch;
-  table = document.getElementById("myTable");
-  switching = true;
-  /*Make a loop that will continue until
-  no switching has been done:*/
-  while (switching) {
-    //start by saying: no switching is done:
-    switching = false;
-    rows = table.rows;
-    /*Loop through all table rows (except the
-    first, which contains table headers):*/
-    for (i = 1; i < (rows.length - 1); i++) {
-      //start by saying there should be no switching:
-      shouldSwitch = false;
-      /*Get the two elements you want to compare,
-      one from current row and one from the next:*/
-      x = rows[i].getElementsByTagName("TD")[0];
-      y = rows[i + 1].getElementsByTagName("TD")[0];
-      //check if the two rows should switch place:
-      if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
-        //if so, mark as a switch and break the loop:
-        shouldSwitch = true;
-        break;
-      }
-    }
-    if (shouldSwitch) {
-      /*If a switch has been marked, make the switch
-      and mark that a switch has been done:*/
-      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
-      switching = true;
-    }
-  }
-}
 
 
-function addTable() {
-
-/* Find a <table> element with id="myTable":*/
-var table = document.getElementById("myTable");
-
-/* Create an empty <tr> element and add it to the 1st position of the table:*/
-var row = table.insertRow(1);
-
-/*sert new cells (<td> elements) at the 1st and 2nd position of the "new" <tr> element:*/
-var cell1 = row.insertCell(0);
-var cell2 = row.insertCell(1);
-var cell3 = row.insertCell(2);
-/* Add some text to the new cells:*/
-cell1.innerHTML = document.getElementById("firstname").value;
-cell2.innerHTML = document.getElementById("lastname").value;
-  
- /* alert("cell2:  "+cell2.innerHTML);*/
-  cell3.innerHTML = document.getElementById("grade").value;
-}
-  
+ 
 function resetTable() {
 
 /* Find a <table> element with id="myTable":*/
 var table = document.getElementById("myTable");
 
 /* Add some text to the new cells:*/
- document.getElementById("firstname").value='';
- document.getElementById("lastname").value='';
-document.getElementById("grade").value='';
-}
+ document.getElementById("date").value='';
+ document.getElementById("HomeTeam").value='';
+document.getElementById("homepoint").value='';
+  document.getElementById("awayteam").value='';
+document.getElementById("awaypoint").value='';  
   
 }
+
+
+// Create a "close" button and append it to each list item
+
+var myNodelist = document.getElementsByTagName("LI");
+
+var i;
+
+for (i = 0; i < myNodelist.length; i++) {
+
+  var span = document.createElement("SPAN");
+
+  var txt = document.createTextNode("\u00D7");
+
+  span.className = "close";
+
+  span.appendChild(txt);
+
+  myNodelist[i].appendChild(span);
+
+}
+
+ 
+
+// Click on a close button to hide the current list item
+
+var close = document.getElementsByClassName("flex-container");
+
+var i;
+
+for (i = 0; i < close.length; i++) {
+
+  close[i].onclick = function() {
+
+    var div = this.parentElement;
+
+    div.style.display = "none";
+
+  }
+
+}
+
+ 
+
+// Add a "checked" symbol when clicking on a list item
+
+var list = document.querySelector('ul');
+
+list.addEventListener('click', function(ev) {
+
+  if (ev.target.tagName === 'LI') {
+
+    ev.target.classList.toggle('checked');
+
+  }
+
+}, false);
+
+ 
+
+// Create a new list item when clicking on the "Add" button
+
+function newElement() {
+
+  var li = document.createElement("li");
+
+  var inputValue = document.getElementById("item").value;
+
+  var t = document.createTextNode(inputValue);
+
+  li.appendChild(t);
+
+  if (inputValue === '') {
+
+    alert("This field cannot be empty!");
+
+  } else {
+
+    document.getElementById("list").appendChild(li);
+
+  }
+
+  document.getElementById("item").value = "";
+
+ 
+
+  var span = document.createElement("SPAN");
+
+  var txt = document.createTextNode("\u00D7");
+
+  span.className = "close";
+
+  span.appendChild(txt);
+
+  li.appendChild(span);
+
+ 
+
+  for (i = 0; i < close.length; i++) {
+
+    close[i].onclick = function() {
+
+      var div = this.parentElement;
+
+      div.style.display = "none";
+
+    }
+
+  }
+
+}
+
 
