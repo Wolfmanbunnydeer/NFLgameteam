@@ -202,6 +202,13 @@ var tempdate = document.querySelector("date");
       input.value = "";
       input.focus();
     }
-
-
+function myFunction() {
+  var x = document.getElementById("gameForm");
+  var text = "";
+  var i;
+  for (i = 0; i < x.length ;i++) {
+    text += x.elements[i].value + "<br>";
+  }
+  document.getElementById("Game").innerHTML = text;
+}
 
