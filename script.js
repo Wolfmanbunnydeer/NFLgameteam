@@ -217,3 +217,20 @@ window.open('https://wolfmanbunnydeer.github.io/NFLgames-team3/'); //This will o
 function newDoc() {
   window.location.assign("https://wolfmanbunnydeer.github.io/NFLgames-team3/")
 }
+function ResetGame() {
+  var x = document.getElementById("gameForm");
+  var text = "";
+  var i;
+  for (i = 0; i < x.length ;i++) {
+    text += x.elements[i].value + "<br>";
+  }
+  document.getElementById("Game").innerHTML = text;
+}
+function ResetGame() {
+  document.getElementById("gameForm").reset();
+}
+window.location.href = 'https://wolfmanbunnydeer.github.io/NFLgameteam/?'; //Will take you to Github.
+window.open('https://wolfmanbunnydeer.github.io/NFLgameteam/?'); //This will open Google in a new window.
+function newDoc() {
+  window.location.assign("https://wolfmanbunnydeer.github.io/NFLgameteam/?")
+}      
