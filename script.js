@@ -220,6 +220,4 @@ function newDoc() {
   }
   document.getElementById("Game").innerHTML = text;
 }
-function ResetGame() {
-  document.getElementById("gameForm").reset();
-}      
+   
