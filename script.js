@@ -212,7 +212,5 @@ function AddGame() {
   document.getElementById("Game").innerHTML = text;
 }
 
-function newDoc() {
-  window.location.assign("https://wolfmanbunnydeer.github.io/NFLgames-team3/")
-}   
+
 
