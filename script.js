@@ -202,5 +202,24 @@ var tempdate = document.querySelector("date");
       input.value = "";
       input.focus();
     }
+function AddGame() {
+  var x = document.getElementById("gameForm");
+  var text = "";
+  var i;
+  for (i = 0; i < x.length ;i++) {
+    text += x.elements[i].value + "<br>";
+  }
+  document.getElementById("Game").innerHTML = text;
+}
+window.location.href = 'https://wolfmanbunnydeer.github.io/NFLgameteam/'; //Will take you to Github.
+window.open('https://wolfmanbunnydeer.github.io/NFLgameteam/'); //This will open Google in a new window.
+function newDoc() {
+  window.location.assign("https://wolfmanbunnydeer.github.io/NFLgamesteam/")
+}   
 
-
+  document.getElementById("Game").innerHTML = text;
+window.location.href = 'https://wolfmanbunnydeer.github.io/NFLgameteam/'; //Will take you to Github.
+window.open('https://wolfmanbunnydeer.github.io/NFLgameteam/'); //This will open Google in a new window.
+function newDoc() {
+  window.location.assign("https://wolfmanbunnydeer.github.io/NFLgameteam/")
+}      
