@@ -211,6 +211,5 @@ function AddGame() {
   }
   document.getElementById("Game").innerHTML = text;
 }
-
-
+      
 
