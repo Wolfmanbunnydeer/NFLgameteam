@@ -163,3 +163,45 @@ var NFL = (document.createElement("flex-container").innerHTML = [{
         AwayPoint: "87"
     }
 ]);
+const charactersList = document.getElementById('Games');
+const searchBar = document.getElementById('Games');
+let NFLgames = [];
+
+searchBar.addEventListener('keyup', (e) => {
+    const searchString = e.target.value.toLowerCase();
+
+    const filteredCharacters = NFLGames.filter((character) => {
+        return (
+            character.name.toLowerCase().includes(searchString) ||
+            character.house.toLowerCase().includes(searchString)
+        );
+    });
+    NFLgames(filteredGames);
+});
+
+const loadCharacters = async () => {
+    try {
+        const res = await fetch('https://hp-api.herokuapp.com/api/characters');
+        NFLGames = await res.json();
+        displayNFLGames(NFLgames);
+    } catch (err) {
+        console.error(err);
+    }
+};
+
+const displayNFL = (NFLgames) => {
+    const htmlString = NFLgames
+        .map((NFLgames) => {
+            return `
+            <li class="character">
+                <h2>${NFL.name}</h2>
+                <p>Games team: ${Gamesteams.house}</p>
+                <img src="${NFLgamesteams.image}"></img>
+            </li>
+        `;
+        })
+        .join('');
+    NFLList.innerHTML = htmlString;
+};
+
+loadNFL();
