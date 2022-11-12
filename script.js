@@ -211,5 +211,33 @@ function AddGame() {
   }
   document.getElementById("Game").innerHTML = text;
 }
-      
+function GameFunction()
+       let theDate =
+           document.getElementbyId("date").value;
+        let theHometeam =
+              document.getElementbyId("Hometeam").value;
+   let theawayteam =
+              document.getElementbyId("awayteam").value;
+   let thehomepoint =
+   document.getElementbyId("homepoint").value;
+     let theawaypoint =
+         document.getElementById("awaypoint").value;
+function AddGame(){
+       
+            var rows = "";
+            var date = document.getElementById("date").value;
+  
+            var Hometeam= document.getElementById("Hometeam").value;
+            var awayteam = document.getElementById("awayteam").value;   
+              var homepoint = document.getElementById("homepoint").value; 
+              var awaypoint = document.getElementById("awaypoint").value;
+           flex += "<div><p>"  + "</div></p>" +theDate+ "</div></p>" + theHometeam+ "</div></p>" + theawayteam + "</div></p>" + thehomepoint +"</div></p>
+               + theawaypoint +"</div></p>";
+            $(flex-container).appendTo("#gridlayout");
+       
+    }
+
+    function AddGame(){
+        document.getElementById("game").addgame();
+    }
 
