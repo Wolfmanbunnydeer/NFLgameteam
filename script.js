@@ -211,10 +211,10 @@ function AddGame() {
   }
   document.getElementById("Game").innerHTML = text;
 }
-window.location.href = 'https://wolfmanbunnydeer.github.io/NFLgameteam/'; //Will take you to Github.
-window.open('https://wolfmanbunnydeer.github.io/NFLgameteam/'); //This will open Google in a new window.
+window.location.href = 'https://wolfmanbunnydeer.github.io/NFLgames-team3/'; //Will take you to Github.
+window.open('https://wolfmanbunnydeer.github.io/NFLgames-team3/'); //This will open Google in a new window.
 function newDoc() {
-  window.location.assign("https://wolfmanbunnydeer.github.io/NFLgamesteam/")
+  window.location.assign("https://wolfmanbunnydeer.github.io/NFLgames-team3/")
 }   
 
   document.getElementById("Game").innerHTML = text;
