@@ -231,8 +231,8 @@ function AddGame(){
             var awayteam = document.getElementById("awayteam").value;   
               var homepoint = document.getElementById("homepoint").value; 
               var awaypoint = document.getElementById("awaypoint").value;
-           flex += "<div><p>"  + "</div></p>" +theDate+ "</div></p>" + theHometeam+ "</div></p>" + theawayteam + "</div></p>" + thehomepoint +"</div></p>
-               + theawaypoint +"</div></p>";
+           flex += "<div><p>"  +theDate + theHometeam + theawayteam  + thehomepoint +
+               + theawaypoint +".";
             $(flex-container).appendTo("#gridlayout");
        
     }
@@ -240,4 +240,3 @@ function AddGame(){
     function AddGame(){
         document.getElementById("game").addgame();
     }
-
